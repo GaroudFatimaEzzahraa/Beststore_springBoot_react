@@ -1,0 +1,75 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1f1f1f; /* Couleur sombre */
+  color: white;
+  padding: 20px;
+  overflow-y: auto; /* Scroll si nécessaire */
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  margin: 15px 0;
+}
+
+/* ✅ Style du bouton Dashboard */
+.btn-manage {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-manage:hover {
+  background: white;
+  color: black;
+  border-radius: 5px;
+}
+
+
+/* ✅ Style du bouton Cards View */
+.btn-view-toggle {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: #ffc107;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-view-toggle:hover {
+  background: #e0a800;
+}
+
+/* 🔴 Bouton Logout */
+.btn-logout {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: #b52b38;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-logout:hover {
+  background: #8f1f2c;
+}

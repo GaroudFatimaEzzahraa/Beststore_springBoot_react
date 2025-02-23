@@ -1,0 +1,125 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-edit, .btn-delete {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-delete {
+  background-color: #b52b38;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete:hover {
+  background-color: #8f1f2c;
+}
+
+/* 📌 Conteneur du bouton */
+.add-category-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* 📌 Nouveau design pour le bouton */
+.add-category-btn {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 📌 Effet de survol avec une ombre dynamique */
+.add-category-btn:hover {
+  background: linear-gradient(135deg, #2E7D32, #1B5E20);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+/* 📌 Effet d'animation au clic */
+.add-category-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* 📌 Mode sombre spécifique */
+.dark-mode .category-card {
+  background: var(--card-bg);
+  color: var(--card-text);
+  box-shadow: 0 5px 10px var(--card-shadow);
+}
+
+/* 📌 Actions sur les cartes */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-warning, .btn-danger {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}

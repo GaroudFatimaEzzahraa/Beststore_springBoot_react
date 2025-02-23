@@ -1,0 +1,95 @@
+/* 📌 Mode clair */
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #212529;
+  --card-bg: white;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --button-primary: #28a745;
+  --button-secondary: #6c757d;
+}
+
+/* 📌 Mode sombre */
+.dark-mode {
+  --background-color: #1e1e1e;
+  --text-color: white;
+  --card-bg: #2a2a2a;
+  --card-shadow: rgba(255, 255, 255, 0.2);
+  --button-primary: #34c759;
+  --button-secondary: #777;
+}
+
+/* 📌 Conteneur principal */
+.create-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* 📌 Carte du formulaire */
+.product-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px var(--card-shadow);
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+/* 📌 Labels */
+.product-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 📌 Champs du formulaire */
+.product-input, .product-select, .product-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* 📌 Boutons */
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: var(--button-primary);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: var(--button-secondary);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 📌 Mode sombre spécifique */
+.dark-mode .product-card {
+  background: var(--card-bg);
+  box-shadow: 0 5px 15px var(--card-shadow);
+}
