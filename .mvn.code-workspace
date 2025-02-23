@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/.mvn"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/.settings"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/bin"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/frontend"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/images"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/public"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/src"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/target"
+		},
+		{
+			"path": "../../master/POO Java/projet_java_final/beststore/uploads"
+		}
+	],
+	"settings": {}
+}

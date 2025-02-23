@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 🔥 Auto-increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
@@ -23,13 +23,21 @@ public class Product {
     @Column(nullable = false)
     private double price;
 
+    @Column(nullable = false)
+    private int stock;
+
+    @Column(nullable = false)
+    private int initialStock; // Nouvelle colonne
+
     @Column(columnDefinition = "TEXT", nullable = false)
     private String description;
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    private String imageFileName;
+    private String imageFileName;  // Nom de fichier de l'image
+
+    private String imageUrl; // URL de l'image
 
     @PrePersist
     protected void onCreate() {
@@ -52,6 +60,12 @@ public class Product {
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
 
+    public int getStock() { return stock; }
+    public void setStock(int stock) { this.stock = stock; }
+
+    public int getInitialStock() { return initialStock; }
+    public void setInitialStock(int initialStock) { this.initialStock = initialStock; }
+
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
@@ -60,4 +74,7 @@ public class Product {
 
     public String getImageFileName() { return imageFileName; }
     public void setImageFileName(String imageFileName) { this.imageFileName = imageFileName; }
+
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 }
